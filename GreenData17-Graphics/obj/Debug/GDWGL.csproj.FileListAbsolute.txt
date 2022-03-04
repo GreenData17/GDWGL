@@ -4,3 +4,9 @@ C:\Users\Edy\Documents\Programmier projekte\c#\GreenData17-Graphics\GreenData17-
 C:\Users\Edy\Documents\Programmier projekte\c#\GreenData17-Graphics\GreenData17-Graphics\obj\Debug\GDWGL.dll
 C:\Users\Edy\Documents\Programmier projekte\c#\GreenData17-Graphics\GreenData17-Graphics\obj\Debug\GDWGL.pdb
 C:\Users\Edy\Documents\Programmier projekte\c#\GreenData17-Graphics\GreenData17-Graphics\obj\Debug\GDWGL.csproj.AssemblyReference.cache
+C:\Users\Edy\Documents\GitHub\GDWGL\GreenData17-Graphics\bin\Debug\GDWGL.dll
+C:\Users\Edy\Documents\GitHub\GDWGL\GreenData17-Graphics\bin\Debug\GDWGL.pdb
+C:\Users\Edy\Documents\GitHub\GDWGL\GreenData17-Graphics\obj\Debug\GDWGL.csproj.AssemblyReference.cache
+C:\Users\Edy\Documents\GitHub\GDWGL\GreenData17-Graphics\obj\Debug\GDWGL.csproj.CoreCompileInputs.cache
+C:\Users\Edy\Documents\GitHub\GDWGL\GreenData17-Graphics\obj\Debug\GDWGL.dll
+C:\Users\Edy\Documents\GitHub\GDWGL\GreenData17-Graphics\obj\Debug\GDWGL.pdb

@@ -26,6 +26,7 @@ namespace GDWGL.Items
 
         public Button(Vector2 Position, Vector2 Size)
         {
+            name = "New Button";
             this.Position = Position;
             this.Size = Size;
             BackgroundColor = Color.LightGray;

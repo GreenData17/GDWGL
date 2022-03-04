@@ -21,11 +21,12 @@ namespace GDWGL.Items
 
         public InputField()
         {
-            name = "New Button";
+            name = "New InputField";
         }
 
         public InputField(Vector2 Position, Vector2 Size)
         {
+            name = "New InputField";
             this.Position = Position;
             this.Size = Size;
             Setup();

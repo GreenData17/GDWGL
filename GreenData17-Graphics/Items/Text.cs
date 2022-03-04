@@ -15,11 +15,12 @@ namespace GDWGL.Items
 
         public Text()
         {
-            name = "New Button";
+            name = "New Text";
         }
 
         public Text(Vector2 Position)
         {
+            name = "New Text";
             this.Position = Position;
             this.Size = Vector2.Zero();
             Setup();

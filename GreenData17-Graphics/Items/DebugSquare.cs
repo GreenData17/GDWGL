@@ -11,6 +11,7 @@ namespace GDWGL.Items
 
         public DebugSquare(Vector2 Position, Vector2 Size)
         {
+            name = "New DebugSquare";
             this.Position = Position;
             this.Size = Size;
             BackgroundColor = Color.Red;

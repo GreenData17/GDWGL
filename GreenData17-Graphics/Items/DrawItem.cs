@@ -62,7 +62,7 @@ namespace GDWGL.Items
         }
 
         // private functions
-        public bool MouseHoveringItem()
+        bool MouseHoveringItem()
         {
             if(WGL.MousePosition > Position && WGL.MousePosition < (Position + Size))
             {
