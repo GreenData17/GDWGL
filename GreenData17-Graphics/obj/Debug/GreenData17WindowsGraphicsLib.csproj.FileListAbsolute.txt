@@ -1,0 +1,6 @@
+C:\Users\Edy\Documents\Programmier projekte\c#\GreenData17-Graphics\GreenData17-Graphics\bin\Debug\GreenData17-Graphics.dll
+C:\Users\Edy\Documents\Programmier projekte\c#\GreenData17-Graphics\GreenData17-Graphics\bin\Debug\GreenData17-Graphics.pdb
+C:\Users\Edy\Documents\Programmier projekte\c#\GreenData17-Graphics\GreenData17-Graphics\obj\Debug\GreenData17WindowsGraphicsLib.csproj.AssemblyReference.cache
+C:\Users\Edy\Documents\Programmier projekte\c#\GreenData17-Graphics\GreenData17-Graphics\obj\Debug\GreenData17WindowsGraphicsLib.csproj.CoreCompileInputs.cache
+C:\Users\Edy\Documents\Programmier projekte\c#\GreenData17-Graphics\GreenData17-Graphics\obj\Debug\GreenData17-Graphics.dll
+C:\Users\Edy\Documents\Programmier projekte\c#\GreenData17-Graphics\GreenData17-Graphics\obj\Debug\GreenData17-Graphics.pdb
