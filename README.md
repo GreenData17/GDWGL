@@ -46,10 +46,33 @@ Feature:
 - change Text Color (Foreground Color)
 - Call a on Button press
 
-#### InputField
+#### InputField (replacement InputFieldControl)
 
 ![InputField](https://github.com/GreenData17/GDWGL/blob/main/pictures/InputField.png)
 
 Feature:
 - Change background Color
 - Write stuff (but always multiple times per press and no backspace)
+
+#### InputFieldControl
+
+![InputFieldControl](https://github.com/GreenData17/GDWGL/blob/main/pictures/InputFieldControl.png)
+
+Feature:
+- Everything the normal "System.windows.Forms.TextBox" can.
+
+#### InputDebug
+
+![InfoDebug](https://github.com/GreenData17/GDWGL/blob/main/pictures/InputDebug.png)
+
+Feature:
+- displays the current pressed mouse button.
+- displays the current pressed keyboard key.
+
+#### Image
+![Image](https://github.com/GreenData17/GDWGL/blob/main/pictures/Image.png)
+
+(default Image if not selected anything)
+
+Feature:
+- Displaying a selected Image
