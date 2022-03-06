@@ -1,9 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace GDWGL.Items
 {
@@ -19,11 +16,13 @@ namespace GDWGL.Items
         public int selectorCounter = 0;
         public bool selectorShowing;
 
+        [Obsolete("This Class currently doesn't work, please use InputFieldControl()")]
         public InputField()
         {
             name = "New InputField";
         }
 
+        [Obsolete("This Class currently doesn't work, please use InputFieldControl()")]
         public InputField(Vector2 Position, Vector2 Size)
         {
             name = "New InputField";

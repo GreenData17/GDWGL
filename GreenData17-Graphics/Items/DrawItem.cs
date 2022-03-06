@@ -19,6 +19,7 @@ namespace GDWGL.Items
         public Color ForeGroundColor = Color.Black;
 
         // States
+        public bool hidden = false;
         public bool hovering = false;
         public bool mouseDown = false;
 

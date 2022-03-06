@@ -47,9 +47,17 @@
   <ItemGroup>
     <Compile Include="Debug.cs" />
     <Compile Include="Items\Button.cs" />
-    <Compile Include="Items\DebugSquare.cs" />
+    <Compile Include="Items\InputDebug.cs" />
+    <Compile Include="Items\Image.cs" />
+    <Compile Include="Items\Square.cs" />
     <Compile Include="Items\DrawItem.cs" />
     <Compile Include="Items\InputField.cs" />
+    <Compile Include="Items\InputFieldControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Items\InputFieldControl.Designer.cs">
+      <DependentUpon>InputFieldControl.cs</DependentUpon>
+    </Compile>
     <Compile Include="Items\Text.cs" />
     <Compile Include="Vector2.cs" />
     <Compile Include="Window.cs">

@@ -1,10 +1,8 @@
-﻿using System;
-using System.Windows.Input;
+﻿using GDWGL.Items;
 using System.Collections.Generic;
 using System.Drawing;
 using System.Threading;
 using System.Windows.Forms;
-using GDWGL.Items;
 
 namespace GDWGL
 {
@@ -14,7 +12,7 @@ namespace GDWGL
         public string title = "New Window";
         public Vector2 size = new Vector2(512, 512);
 
-        private Window m_window = null;
+        public static Window s_window = null;
         private bool m_doubleBuffered = false;
         private Thread m_Loop;
         public static KeyEventArgs s_currentKeyInfo = new KeyEventArgs(Keys.None);
@@ -47,27 +45,27 @@ namespace GDWGL
         {
             Debug.LogInfo("Initialize...");
 
-            m_window = new Window(m_doubleBuffered)
+            s_window = new Window(m_doubleBuffered)
             {
                 Text = title,
                 Size = size.ToSize(),
                 FormBorderStyle = FormBorderStyle.FixedSingle,
             };
 
-            m_window.Paint += Renderer;
-            m_window.FormClosing += OnWindowClosing;
-            m_window.KeyDown += M_window_KeyDown;
-            m_window.KeyUp += M_window_KeyUp;
-            m_window.MouseDown += M_window_MouseDown; ;
-            m_window.MouseUp += M_window_MouseUp;
-            m_window.MouseMove += M_window_MouseMove;
+            s_window.Paint += Renderer;
+            s_window.FormClosing += OnWindowClosing;
+            s_window.KeyDown += M_window_KeyDown;
+            s_window.KeyUp += M_window_KeyUp;
+            s_window.MouseDown += M_window_MouseDown; ;
+            s_window.MouseUp += M_window_MouseUp;
+            s_window.MouseMove += M_window_MouseMove;
 
             m_Loop = new Thread(Loop);
             m_Loop.Start();
 
             Debug.LogInfo("Initialized!");
             Debug.LogInfo("Window Opened!");
-            Application.Run(m_window);
+            Application.Run(s_window);
         }
 
         private void Loop()
@@ -77,7 +75,7 @@ namespace GDWGL
             {
                 try
                 {
-                    m_window.BeginInvoke((MethodInvoker)delegate { m_window.Refresh(); });
+                    s_window.BeginInvoke((MethodInvoker)delegate { s_window.Refresh(); });
                     OnUpdate();
                     Thread.Sleep(UpdateFrequenzy);
                 }
@@ -90,7 +88,7 @@ namespace GDWGL
 
         public void Exit()
         {
-            m_window.Close();
+            s_window.Close();
         }
 
 
@@ -102,7 +100,8 @@ namespace GDWGL
             g.Clear(ClearColor);
             foreach(DrawItem item in items)
             {
-                item.Update(g);
+                if(!item.hidden)
+                    item.Update(g);
             }
         }
 
@@ -148,6 +147,10 @@ namespace GDWGL
         public static Vector2 DragItem(Vector2 size)
         {
             return MousePosition - (size / new Vector2(2));
+        }
+        public static Window GetWindow()
+        {
+            return s_window;
         }
 
 

@@ -2,14 +2,14 @@
 
 namespace GDWGL.Items
 {
-    public class DebugSquare : DrawItem
+    public class Square : DrawItem
     {
-        public DebugSquare()
+        public Square()
         {
             name = "New DebugSquare";
         }
 
-        public DebugSquare(Vector2 Position, Vector2 Size)
+        public Square(Vector2 Position, Vector2 Size)
         {
             name = "New DebugSquare";
             this.Position = Position;
